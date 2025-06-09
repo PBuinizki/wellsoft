@@ -1,0 +1,200 @@
+
+        <!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+
+    <header class="header"  data-fade="fade-dawn">
+    <!-- Логотип -->
+    <a href="/" class="logo">
+        <img src="../../../img/logo.svg" alt="Логотип">
+    </a>
+    
+    <!-- Основное меню -->
+    <nav class="nav"  data-da=".mobile-nav,1024,first">
+        <!-- Экосистема с мега-меню -->
+        <div class="nav-item dropdown">
+        <button id="ecoButton" class="nav-link">Экосистема</button>
+            <div class="mega-menu">
+                <div class="mega-row">
+                    <a href="#" class="mega-card">
+                        <h6>Приложение застройщика</h3>
+                        <p>Витрина квартир ЛК покупателя</p>
+                        <img src="../../../img/app.png" alt="Приложение застройщика">
+                    </a>
+                    <a href="#" class="mega-card">
+                        <h6>Приёмка</h3>
+                        <p>Lorem ipsum</p>
+                        <img src="../../../img/priem.png" alt="Приёмка">
+                    </a>
+                    <a href="#" class="mega-card">
+                        <h6>Платформа для УК</h3>
+                        <p>Интерфейсы,
+                        Функции,
+                        Умное&nbsp;здание,
+                        Умный&nbsp;дом</p>
+                        <img src="../../../img/platform.png" alt="Платформа для УК">
+                    </a>
+                <!-- Остальные карточки -->
+                </div>
+                <div class="mega-col">
+                    <a href="#" class="mega-link">
+                        <h6>Ситуационный центр</h3>
+                        <p>АСУЗ
+                        Клиентский&nbsp;сервис</p>
+                    </a>
+                    <a href="#" class="mega-link">
+                        <h6>API</h3>
+                        <p>CRM Wellsoft Core</p>
+                    </a>
+                    <a href="#" class="mega-link">
+                        <h6>Все функции</h3>
+                        <p>Оплата, заявки, ОСС,
+                            колл-центр&nbsp;и т.д.</p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- Обычные ссылки -->
+        <a href="#" class="nav-link">Кейсы</a>
+        <a href="#" class="nav-link">Партнерам</a>
+        
+        <!-- О нас с подменю -->
+        <div id="about" class="nav-item dropdown" data-da=".nav, 1024, last">
+            <button id="aboutButton" class="nav-link">О нас</button>
+            <div class="submenu">
+                <a href="#">Новости</a>
+                <a href="#">Блог</a>
+                <a href="#">Правовая информация</a>
+                <a href="#">Вакансии</a>
+                <a href="#">Контакты</a>
+                <a href="#">FAQ</a>
+                <!-- Остальные ссылки -->
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Правый блок -->
+    <div class="header-right">
+        <button class="search-btn">
+        <img src="../../../img/sprites/search.svg" alt="Поиск">
+        </button>
+        <button class="contact-btn _desk">Связаться с нами</button>
+        <button class="burger">
+            <!-- <span></span>
+            <span></span>
+            <span></span> -->
+            <svg id="burgerIcon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 6C15.75 5.58579 15.4142 5.25 15 5.25H1C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75H15C15.4142 6.75 15.75 6.41421 15.75 6Z" fill="#599D1A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 1C15.75 0.585786 15.4142 0.25 15 0.25H1C0.585786 0.25 0.25 0.585786 0.25 1C0.25 1.41421 0.585786 1.75 1 1.75H15C15.4142 1.75 15.75 1.41421 15.75 1Z" fill="#599D1A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 11C15.75 10.5858 15.4142 10.25 15 10.25H1C0.585786 10.25 0.25 10.5858 0.25 11C0.25 11.4142 0.585786 11.75 1 11.75H15C15.4142 11.75 15.75 11.4142 15.75 11Z" fill="#599D1A"/>
+            </svg>
+            <svg id="crossIcon" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.06624 1.9948C9.35913 1.70191 9.35913 1.22703 9.06624 0.93414C8.77335 0.641247 8.29847 0.641247 8.00558 0.93414L5.00038 3.93934L1.99518 0.93414C1.70229 0.641247 1.22742 0.641247 0.934523 0.93414C0.64163 1.22703 0.64163 1.70191 0.934523 1.9948L3.93972 5L0.934514 8.00521C0.641621 8.2981 0.64162 8.77297 0.934514 9.06587C1.22741 9.35876 1.70228 9.35876 1.99517 9.06587L5.00038 6.06066L8.00559 9.06587C8.29848 9.35876 8.77336 9.35876 9.06625 9.06587C9.35914 8.77298 9.35914 8.2981 9.06625 8.00521L6.06104 5L9.06624 1.9948Z" fill="#599D1A"/>
+            </svg>
+
+        </button>
+    </div>
+    <div class="mobile-nav">
+        <button class="green-button">Связаться с нами</button>
+    </div>
+    </header>
+        404
+               <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <a href="/" class="logo">
+                    <img src="../../../img/logo-white.svg" alt="Логотип">
+                </a>
+                <dl class="footer-contact"  data-da=".footer-row,1024,1">
+                    <dt>Техподдержка</dt>
+                    <dd><a href="#">8 800 555 11 85</a></dd>
+                    <dt>Отдел продаж</dt>
+                    <dd><a href="#">8 800 555 11 85</a></dd>
+                    <dt>E-mail</dt>
+                    <dd><a href="#">uk@wellsoft.pro</a></dd>
+                </dl>
+            </div>
+            <div class="footer-row">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><h6>Экосистема</h6></li>
+                        <li><a href="#">Приложение<br>застройщика</a></li>
+                        <li><a href="#">Платформа для УК</a></li>
+                        <li><a href="#">Приёмка</a></li>
+                        <li><a href="#">Ситуационный центр</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                    <ul>
+                        <li><h6>О нас</h6></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Правовая информация</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><h6>Кейсы</h6></a></li>
+                        <li><a href="#"><h6>Партнёрам</h6></a></li>
+                    </ul> 
+                </nav>
+
+            </div>
+            <ul class="footer-soc"  data-da=".footer-col,1024,1">
+                <li><a href="#" title="Вконтакте">
+                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.8552 12C4.28353 12 0.536535 7.5036 0.382812 0.00960791H3.68786C3.79354 5.5052 6.21468 7.83026 8.13622 8.31065V0.00960791H11.2395V4.7462C13.1322 4.54444 15.1306 2.38271 15.8032 0H18.8968C18.6446 1.2334 18.1407 2.40153 17.4166 3.43141C16.6926 4.46129 15.7639 5.33079 14.6887 5.98559C15.8886 6.58283 16.9483 7.42766 17.7979 8.46436C18.6474 9.50107 19.2676 10.7061 19.6174 12H16.2067C15.4765 9.72298 13.651 7.95516 11.2395 7.71497V12H10.8648H10.8552Z" fill="white"/>
+                    </svg>
+                </a></li>
+                <li><a href="#" title="Youtube">
+                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0.0078125C10.0401 0.00781693 16.2652 0.00959085 17.8252 0.436523C18.6818 0.66725 19.3573 1.34246 19.5879 2.19922C20.0163 3.76424 20 7.02637 20 7.02637C20 7.07036 19.9968 10.2815 19.5879 11.8359C19.3572 12.6925 18.6819 13.3681 17.8252 13.5986C16.2624 14.01 10.0187 14.0107 10 14.0107C10 14.0107 3.75653 14.0113 2.1748 13.583C1.31818 13.3523 0.642938 12.6767 0.412109 11.8203C0.00268801 10.2808 1.40394e-05 7.04757 0 7.00977C0 7.00977 0.000320835 3.76422 0.412109 2.19922C0.642669 1.34259 1.33466 0.650481 2.1748 0.419922C3.74028 0.00799813 10 0.0078125 10 0.0078125ZM8.00684 10.0078L13.2119 7.00879L8.00684 4.01074V10.0078Z" fill="white"/>
+                    </svg>
+                </a></li>
+                <li><a href="#" title="Telegram">
+                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.15358 7.31846C6.66004 4.91938 10.3319 3.33777 12.1691 2.57361C17.4147 0.391776 18.5047 0.0127698 19.2151 0.00012133C19.3714 -0.00249777 19.7208 0.0362266 19.9471 0.219862C20.1382 0.37492 20.1907 0.584381 20.2159 0.731393C20.2411 0.878405 20.2724 1.2133 20.2475 1.47498C19.9632 4.46174 18.7332 11.7098 18.1075 15.055C17.8427 16.4705 17.3213 16.9451 16.8166 16.9916C15.7197 17.0925 14.8868 16.2667 13.8243 15.5702C12.1619 14.4805 11.2227 13.8021 9.60901 12.7387C7.74409 11.5097 8.95304 10.8343 10.0158 9.73042C10.294 9.44153 15.127 5.04555 15.2205 4.64677C15.2322 4.59689 15.2431 4.41098 15.1326 4.31282C15.0222 4.21465 14.8592 4.24822 14.7415 4.27492C14.5748 4.31276 11.919 6.06814 6.77416 9.54107C6.02032 10.0587 5.33752 10.3109 4.72575 10.2977C4.05133 10.2831 2.754 9.91638 1.78957 9.60288C0.606664 9.21836 -0.333489 9.01506 -0.251622 8.36203C-0.208981 8.0219 0.259421 7.67404 1.15358 7.31846Z" fill="white"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-row">
+                <div class="copyright">© 2025 - Wellsoft Elements</div>
+                <a href="javascript:void(0);" class="madeby">Сайт разработчика<img src="../../../img/wellsoft.png" alt="wellsoft"></a>
+            </div>
+        </div>
+       </footer>
+       
+       
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>
