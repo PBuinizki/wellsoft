@@ -906,6 +906,163 @@
         <!-- <small>Ответим в течение дня, ничего не навязываем</small> -->
     </div>
 </section>
+            <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="header-content">
+                    <div class="featured-icon">
+                        <div class="icon-background"></div>
+                        <div class="icon-glass">
+                            <svg
+                                width="28"
+                                height="28"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="check-icon"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M12.8267 4.4445C13.0192 4.637 13.2117 4.8295 13.41 5.02783C14.7291 4.95455 15.5579 4.3072 16.6184 3.5695C18.5678 2.9197 21.0929 2.90458 22.9621 3.80648C23.91 4.4445 23.91 4.4445 24.4934 5.3195C24.2941 5.49771 24.0948 5.67592 23.8895 5.85954C20.5694 8.86322 17.4361 12.0575 14.285 15.2362C13.436 14.8554 12.8653 14.4602 12.2365 13.7767C12.0771 13.6088 11.9177 13.4409 11.7535 13.268C11.4243 12.9157 11.0969 12.5617 10.7714 12.2061C9.75747 11.1458 9.1151 10.6276 7.57671 10.5695C7.39681 11.415 7.33538 11.7972 7.57671 12.6112C8.22258 13.3389 8.92491 13.9315 9.67648 14.5492C10.703 15.4125 11.582 16.3813 12.4758 17.3792C13.351 18.0357 13.7897 18.005 14.8684 17.8612C15.511 17.3686 16.0066 16.9215 16.5523 16.3379C16.7061 16.1809 16.86 16.0239 17.0185 15.8621C17.5092 15.3597 17.9936 14.8517 18.4777 14.3429C19.1166 13.6818 19.7576 13.0229 20.3986 12.3639C20.552 12.2053 20.7053 12.0468 20.8633 11.8834C21.8797 10.8376 22.9271 9.84967 24.0448 8.91121C24.5505 8.49079 24.5505 8.49079 25.1861 7.81689C25.66 7.36117 25.66 7.36116 26.2434 7.36116C27.2989 9.58768 27.2133 12.2612 26.4826 14.5765C24.3911 19.0747 20.0266 23.5087 15.4517 25.4445C13.7983 25.8249 12.5609 25.5603 11.0949 24.7336C9.43959 23.6283 7.9055 22.3808 6.41004 21.0695C6.17769 20.8687 5.94533 20.668 5.70594 20.4611C3.58401 18.4996 1.29415 15.4428 1.09054 12.4722C1.0105 9.50261 1.20267 7.33807 3.29285 5.06429C5.97549 2.63527 9.80376 2.46795 12.8267 4.4445Z"
+                                    fill="#599D1A"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="title-section">
+                        <h1 id="modal-title" class="modal-title">Отправьте заявку</h1>
+                        <p id="modal-description" class="modal-description">
+                            И мы поможем вам найти оптимальное решение
+                        </p>
+                    </div>
+                </div>
+                <button class="close-button" type="button" aria-label="Закрыть модальное окно">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="close-icon"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M18 6L6 18M6 6L18 18"
+                            stroke="#717680"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
+                <div class="header-padding"></div>
+            </div>
+
+            <main class="modal-content">
+                <form class="contact-form" novalidate>
+                    <div class="form-field">
+                        <label class="input-wrapper">
+                            <input type="text" class="form-input" placeholder="Имя" required aria-label="Имя">
+                        </label>
+                    </div>
+
+                    <fieldset class="contact-method-field">
+                        <legend class="contact-method-label">Выберите удобный способ связи</legend>
+                        <div class="contact-tabs" role="tablist">
+                            <button type="button" class="contact-tab active" role="tab" aria-selected="true" aria-controls="phone-panel" id="phone-tab">
+                                Звонок
+                            </button>
+                            <button type="button" class="contact-tab" role="tab" aria-selected="false" aria-controls="telegram-panel" id="telegram-tab">
+                                Telegram
+                            </button>
+                            <button type="button" class="contact-tab" role="tab" aria-selected="false" aria-controls="whatsapp-panel" id="whatsapp-tab">
+                                WhatsApp
+                            </button>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-field">
+                        <div class="phone-input-wrapper">
+                            <div class="country-select">
+                                <span class="country-code">+7</span>
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="dropdown-icon"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M13 6L8 11L3 6"
+                                        stroke="#A4A4A4"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <input type="tel" class="form-input phone-input" placeholder="Номер телефона" required aria-label="Номер телефона">
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="input-wrapper">
+                            <input type="email" class="form-input" placeholder="Email" required aria-label="Email">
+                        </label>
+                    </div>
+
+                    <div class="form-field">
+                        <div class="select-wrapper">
+                            <select class="form-select" required aria-label="Тип организации">
+                                <option value="" disabled selected>Тип организации</option>
+                                <option value="individual">Физическое лицо</option>
+                                <option value="company">Юридическое лицо</option>
+                                <option value="entrepreneur">ИП</option>
+                            </select>
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="select-dropdown-icon"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M13.7751 7.47481C14.0192 7.71888 14.0192 8.11461 13.7751 8.35869L10.4418 11.692C10.1977 11.9361 9.80197 11.9361 9.5579 11.692L6.22456 8.35869C5.98048 8.11461 5.98048 7.71888 6.22456 7.47481C6.46864 7.23073 6.86437 7.23073 7.10845 7.47481L9.99984 10.3662L12.8912 7.47481C13.1353 7.23073 13.531 7.23073 13.7751 7.47481Z"
+                                    fill="#061C3D"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="consent-field">
+                        <label class="consent-wrapper">
+                            <input type="checkbox" class="consent-checkbox" required>
+                            <span class="checkbox-custom"></span>
+                            <span class="consent-text">
+                                Я даю согласие на обработку своих персональных данных
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </main>
+
+            <div class="modal-actions">
+                <div class="action-buttons">
+                    <button type="button" class="cancel-button">
+                        Отменить
+                    </button>
+                    <button type="submit" class="submit-button">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
                <!-- clip-path -->
        <!--  <svg width="433" height="750" viewBox="0 0 433 750" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
