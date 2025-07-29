@@ -959,7 +959,7 @@
             </div>
 
             <main class="modal-content">
-                <form class="contact-form" novalidate>
+                <form class="contact-form" id="modalForm" novalidate>
                     <div class="form-field">
                         <label class="input-wrapper">
                             <input type="text" class="form-input" placeholder="Имя" required aria-label="Имя">
@@ -1002,7 +1002,7 @@
                                     />
                                 </svg>
                             </div>
-                            <input type="tel" class="form-input phone-input" placeholder="Номер телефона" required aria-label="Номер телефона">
+                            <input id="modalPhone" type="tel" class="form-input phone-input" placeholder="Номер телефона" required aria-label="Номер телефона">
                         </div>
                     </div>
 
@@ -1056,7 +1056,7 @@
                     <button type="button" class="cancel-button">
                         Отменить
                     </button>
-                    <button type="submit" class="submit-button">
+                    <button type="submit" form="modalForm" class="submit-button">
                         Отправить
                     </button>
                 </div>
